@@ -22,12 +22,18 @@
     <ClCompile Include="src\Board.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src\Socket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\GomokuC\Stone.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="include\GomokuC\Board.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GomokuC\Socket.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
