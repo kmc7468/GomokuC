@@ -1,6 +1,4 @@
-﻿#include <Windows.h>
-
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+﻿int main()
 {
 	return 0;
 }

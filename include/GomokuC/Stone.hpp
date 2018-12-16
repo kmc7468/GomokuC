@@ -11,6 +11,7 @@ public:
 	};
 
 public:
+	Stone() noexcept = default;
 	Stone(Type type, int turn) noexcept;
 	Stone(const Stone& stone) noexcept;
 	~Stone() = default;
@@ -27,8 +28,8 @@ public:
 	void turn(int new_turn) noexcept;
 
 private:
-	Type type_;
-	int turn_;
+	Type type_ = Empty;
+	int turn_ = 0;
 };
 
 using StoneType = Stone::Type;
