@@ -151,6 +151,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Stone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GomokuC\Stone.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
