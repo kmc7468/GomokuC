@@ -1,9 +1,12 @@
 ﻿#pragma once
 
+#include <cstdint>
+#include <string>
 #include <WinSock2.h>
 
-enum class AddressFamily
+enum class AddressFamily : ADDRESS_FAMILY
 {
+	None,
 	IPv4 = AF_INET,
 	IPv6 = AF_INET6,
 };
@@ -24,11 +27,14 @@ public:
 	bool operator!=(const Socket& socket) = delete;
 
 public:
+	void connect(const std::string& address, std::uint16_t port);
 	void disconnect() noexcept;
 
 public:
 	SOCKET data() noexcept;
+	AddressFamily address_family() const noexcept;
 
 private:
 	SOCKET socket_ = INVALID_SOCKET;
+	AddressFamily address_family_ = AddressFamily::None;
 };
