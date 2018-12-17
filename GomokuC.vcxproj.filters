@@ -28,6 +28,9 @@
     <ClCompile Include="src\Client.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\GomokuC\Stone.hpp">
@@ -40,6 +43,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="include\GomokuC\Client.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GomokuC\Application.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GomokuC\Exception.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -78,6 +78,27 @@ void Socket::disconnect() noexcept
 		address_family_ = AddressFamily::None;
 	}
 }
+void Socket::send(const void* buffer, int size)
+{
+	assert(socket_ != INVALID_SOCKET);
+	assert(buffer != nullptr);
+	assert(size != 0);
+
+	if (::send(socket_, reinterpret_cast<const char*>(buffer), size, 0) == SOCKET_ERROR)
+		throw std::runtime_error("Failed to send data.");
+}
+int Socket::receive(void* buffer, int size)
+{
+	assert(socket_ != INVALID_SOCKET);
+	assert(buffer != nullptr);
+	assert(size != 0);
+
+	const int received = recv(socket_, reinterpret_cast<char*>(buffer), size, 0);
+	if (received == SOCKET_ERROR)
+		throw std::runtime_error("Failed to receive data.");
+
+	return received;
+}
 
 SOCKET Socket::data() noexcept
 {

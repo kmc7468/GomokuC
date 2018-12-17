@@ -29,6 +29,8 @@ public:
 public:
 	void connect(const std::string& address, std::uint16_t port);
 	void disconnect() noexcept;
+	void send(const void* buffer, int size);
+	int receive(void* buffer, int size);
 
 public:
 	SOCKET data() noexcept;
