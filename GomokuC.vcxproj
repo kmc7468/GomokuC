@@ -158,6 +158,8 @@
     <ClCompile Include="src\Board.cpp" />
     <ClCompile Include="src\Client.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Scenes\MainMenuScene.cpp" />
     <ClCompile Include="src\Socket.cpp" />
     <ClCompile Include="src\Stone.cpp" />
   </ItemGroup>
@@ -165,6 +167,8 @@
     <ClInclude Include="include\GomokuC\Application.hpp" />
     <ClInclude Include="include\GomokuC\Client.hpp" />
     <ClInclude Include="include\GomokuC\Exception.hpp" />
+    <ClInclude Include="include\GomokuC\Scene.hpp" />
+    <ClInclude Include="include\GomokuC\Scenes\MainMenuScene.hpp" />
     <ClInclude Include="include\GomokuC\Socket.hpp" />
     <ClInclude Include="include\GomokuC\Board.hpp" />
     <ClInclude Include="include\GomokuC\Stone.hpp" />

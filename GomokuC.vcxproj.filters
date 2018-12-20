@@ -11,6 +11,12 @@
       <Extensions>
       </Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Scenes">
+      <UniqueIdentifier>{21dab331-99b2-4457-ac6d-6ef632743e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scenes">
+      <UniqueIdentifier>{aaacdbf3-14a9-446e-b788-61efb9b88e9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -31,6 +37,12 @@
     <ClCompile Include="src\Application.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scenes\MainMenuScene.cpp">
+      <Filter>소스 파일\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\GomokuC\Stone.hpp">
@@ -50,6 +62,12 @@
     </ClInclude>
     <ClInclude Include="include\GomokuC\Exception.hpp">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GomokuC\Scene.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GomokuC\Scenes\MainMenuScene.hpp">
+      <Filter>헤더 파일\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
